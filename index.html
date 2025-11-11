@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>DreamTech - Staň sa členom</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+
+            /* 🌌 Svetlomodré pozadie s čiernymi bodkami */
+            background-color: #e6f2ff;
+            background-image:
+                radial-gradient(circle at 25px 25px, rgba(0, 0, 0, 0.15) 2px, transparent 0),
+                radial-gradient(circle at 75px 75px, rgba(0, 0, 0, 0.15) 2px, transparent 0);
+            background-size: 100px 100px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+            padding-top: 80px;
+        }
+
+        .banner {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            width: 120px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        form {
+            padding: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 10px 0 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="banner.jpg" alt="Môj banner" class="banner">
+
+    <h2>Staň sa členom DreamTechu</h2>
+
+    <form action="odosli.php" method="POST">
+        <input type="text" name="meno" placeholder="Meno a priezvisko" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="telefon" placeholder="Telefónne číslo" required>
+        <button type="submit">Chcem sa stať členom DreamTechu</button>
+    </form>
+</div>
+
+</body>
+</html>
